@@ -4,70 +4,66 @@ Projeto desenvolvido para a disciplina de **Práticas Extensionistas IV**.
 
 ## Sobre o projeto
 
-O Sistema de Gestão para Padaria Santo Pão é uma solução computacional
-desenvolvida com o objetivo de auxiliar na gestão de uma padaria,
-permitindo o gerenciamento de produtos, estoque, consultas e outras
-operações relacionadas ao estabelecimento.
+O Sistema de Gestão para Padaria Santo Pão é uma solução web desenvolvida
+para auxiliar na organização e gerenciamento das atividades de uma padaria.
 
-O protótipo funcional da aplicação foi desenvolvido durante a disciplina
-de Práticas Extensionistas III. Na Prática Extensionista IV, o projeto
-será evoluído com foco na arquitetura da aplicação, infraestrutura de
-implantação e práticas de DevOps.
+O projeto dá continuidade ao sistema desenvolvido nas etapas anteriores
+das Práticas Extensionistas, avançando nesta etapa para a definição da
+arquitetura da aplicação, infraestrutura de implantação e processo DevOps.
 
-## Integrante
+## Tecnologias
 
-- Gabriel Luis Simianco
-
-## Tecnologias da aplicação
-
-- PHP
 - HTML
 - CSS
-- MariaDB
+- JavaScript
+- PHP
 - Apache
+- MariaDB
 - Git
 - GitHub
+- GitHub Actions
 
 ## Arquitetura
 
-A documentação de arquitetura do projeto está dividida em:
+A arquitetura proposta utiliza uma infraestrutura self-hosted baseada
+em Linux, separando a aplicação web e o banco de dados.
 
-### Diagrama UML de Pacotes
-Representa a organização lógica dos componentes e pacotes da aplicação.
+O servidor de aplicação utiliza Apache e PHP para execução do sistema,
+enquanto o servidor de banco de dados utiliza MariaDB.
 
-📁 `diagramas/arquitetura-aplicacao/`
+## Diagramas
 
-### Diagrama de Arquitetura de Implantação
-Representa a infraestrutura utilizada para executar e disponibilizar
-a aplicação.
+Os diagramas desenvolvidos nesta etapa estão disponíveis na pasta
+`diagramas/`.
 
-📁 `diagramas/arquitetura-implantacao/`
+Foram elaborados:
 
-### Diagrama de Arquitetura DevOps
-Representa o processo de desenvolvimento, versionamento, integração
-e publicação da aplicação.
-
-📁 `diagramas/arquitetura-devops/`
-
-## Infraestrutura
-
-A solução será projetada para execução em ambiente Linux, utilizando
-servidor web Apache, PHP e banco de dados MariaDB.
-
-A descrição e justificativa da infraestrutura escolhida estão disponíveis em:
-
-📁 `infraestrutura/`
+- Diagrama UML de Pacotes
+- Diagrama de Arquitetura de Implantação
+- Diagrama de Arquitetura DevOps
 
 ## Documentação
 
-Os documentos referentes às entregas da disciplina estão disponíveis em:
+A documentação completa da Entrega 1 está disponível na pasta
+`documentacao/`.
 
-📁 `documentacao/`
+## Infraestrutura proposta
 
-## Disciplina
+A solução utiliza uma infraestrutura self-hosted baseada em Linux.
 
-**Práticas Extensionistas IV**
+A publicação da aplicação poderá ser realizada utilizando GitHub Actions
+para integração e entrega contínua, com deploy no servidor através de
+SSH e rsync.
 
-UNOESC — Universidade do Oeste de Santa Catarina
+## Estrutura do repositório
 
-2026
+```text
+.
+├── diagramas/
+│   ├── diagrama-pacotes.png
+│   ├── diagrama-implantacao.png
+│   └── diagrama-devops.png
+├── documentacao/
+│   └── pratica-extensionista-iv.pdf
+├── sistema/
+└── README.md
